@@ -66,11 +66,10 @@ Learns **systematic residual patterns** (bias, drift, temporal error trends) fro
 
 ### 🔹 Weighted Loss Function
 Gives **extra importance to low SoC** values to reduce underestimation risk in critical discharge zones:
-```python
 low_soc_threshold = 25.0
 high_error_weight = 15.0
 
-📊 Performance Metrics
+## 📊 Performance Metrics
 
 The script outputs a full comparison of pre- and post-correction performance:
 
@@ -83,11 +82,11 @@ Additionally, the script prints standard deviation and mean of residual errors f
 
 .
 
-🧰 Requirements
+## 🧰 Requirements
 
 Run "pip install -r requirements.txt" to install all the required dependencies.
 
-📂 File Structure
+## 📂 File Structure
 project/
 │
 ├── dataset/
@@ -99,7 +98,7 @@ project/
 
 If datasets are missing, the script will automatically generate synthetic data to preserve functionality.
 
-🧪 Usage
+## 🧪 Usage
 ▶️ Run the training and evaluation:
 python hybrid_soc_predictor_with_error_correction.py
 
@@ -117,7 +116,7 @@ The script will:
 5. Evaluate and visualize results.
 
 
-📈 Visualization Outputs
+## 📈 Visualization Outputs
 
 The notebook automatically produces:
 
@@ -140,7 +139,7 @@ high_error_weight     15.0	   Emphasis on low SoC penalty
 num_heads	          4	       Transformer attention heads
 dropout_rate	  0.4 - 0.5	   Regularization strength
 
-🧩 Error Correction Impact
+## 🧩 Error Correction Impact
 
 The second stage effectively reduces prediction drift and enhances robustness near critical discharge points, quantified via:
 
